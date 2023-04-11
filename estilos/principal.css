@@ -1,0 +1,248 @@
+
+
+.cerrarSesion{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+
+.contenedor{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8F8F9;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+.logout{
+  color: black;
+}
+
+.text {
+    position: fixed;
+    top: 15px;
+    right: 400px;
+}
+
+.barralat {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    height: 100vh;
+    width: 300px;
+}
+
+.barrasup h1 {
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+
+.dashBoard {
+    position: fixed;
+    top: 100px;
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    align-items: left;
+    padding-top: 30px;
+    border-radius: 50px;
+
+}
+
+.dashBoard:hover {
+    transform: 2s;
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+.plan:hover {
+    transform: 2s;
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+
+.notas_academicas {
+    position: fixed;
+    top: 150px;
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    align-items: left;
+    padding-top: 30px;
+    border-radius: 50px;
+
+}
+
+.notas_academicas:hover {
+    transform: 2s;
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+
+.plan {
+    position: fixed;
+    top: 200px;
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    align-items: left;
+    padding-top: 30px;
+    border-radius: 50px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #ddd;
+  }
+  .btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .btn:hover {
+    background-color: #0069d9;
+  }
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+
+
+ .agregar{
+  font-size: 100px;
+  position:relative;
+  left: 90vw;
+  top: 80vh;
+  z-index: 1;
+  cursor: pointer;
+  margin-right: 97vw;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  padding-top: 0px;
+  justify-content: center;
+ }
+
+
+ .modal {
+  position: absolute;
+  width: 800px;
+
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* coloca el modal en el centro de la pantalla */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="date"], input[type="year"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.abrir_modal{
+  position: sticky;
+  left: 90vw;
+  top: 80vh;
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 100px;
+}
+
+.tabla{
+width: 79%;
+}
+

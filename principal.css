@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h3 {
+  font-size: xx-large;
+}
+
+header h3:hover {
+  text-align: left;
+  font-family: Arial Black;
+  font-weight: bold;
+  transition: 1s;
+  font-size: 30px;
+  color: #030303;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+    0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+#cerrarSesion {
+  height: 50px;
+  width: 150px;
+  margin-right: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+#cerrarSesion:hover {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+}
+
+.menu {
+  padding: 20px;
+  height: 100vh;
+  padding-top: 100px;
+  width: 100px;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.usuarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.docentes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.menu img {
+  width: 100px;
+  height: 100px;
+}
+
+.menu img:hover {
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+}
+
+.tabla{
+  width: 80vw;
+  height: 100vh;
+  padding-left: 0;
+  position: absolute;
+  top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+
+/* Estilos para la tabla */
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+#myTable th,
+#myTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+#myTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#myTable tr:hover {
+  background-color: #ddd;
+}
+/* Estilos para el paginador */
+.dataTables_paginate {
+  margin-top: 10px;
+  text-align: right;
+}
+.dataTables_paginate .paginate_button.current {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin: 0 3px;
+}
+.dataTables_paginate .paginate_button.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}

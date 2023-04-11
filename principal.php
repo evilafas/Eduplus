@@ -28,48 +28,41 @@
   </div>
 
   <div class="tabla">
-  <table id="myTable">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Edad</th>
-        <th>Email</th>
-        <th>Ciudad</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Juan</td>
-        <td>25</td>
-        <td>juan@gmail.com</td>
-        <td>Madrid</td>
-      </tr>
-      <tr>
-        <td>Pablo</td>
-        <td>32</td>
-        <td>pablo@hotmail.com</td>
-        <td>Barcelona</td>
-      </tr>
-      <tr>
-        <td>María</td>
-        <td>28</td>
-        <td>maria@yahoo.com</td>
-        <td>Sevilla</td>
-      </tr>
-      <tr>
-        <td>Lucía</td>
-        <td>21</td>
-        <td>lucia@gmail.com</td>
-        <td>Valencia</td>
-      </tr>
-      <tr>
-        <td>Antonio</td>
-        <td>39</td>
-        <td>antonio@gmail.com</td>
-        <td>Barcelona</td>
-      </tr>
-    </tbody>
-  </table>
+  <table class="myTable" id="myTable">
+  <thead>
+    <tr>
+      <th>ID USUARIO</th>
+      <th>NOMBRES</th>
+      <th>APELLIDOS</th>
+      <th>USERNAME</th>
+      <th>PASSWORD</th>
+      <th>ROL</th>
+      <th>EMAIL</th>
+      <th>OPCIONES</th>
+    </tr>
+  </thead>
+  <tbody>
+  <?php
+          $query = "SELECT * FROM usuarios";
+          $result_tasks = mysqli_query($conn, $query);    
+
+          while($row = mysqli_fetch_assoc($result_tasks)) { ?>
+          <tr>
+            <td><?php echo $row['id']; ?></td>
+            <td><?php echo $row['nombres']; ?></td>
+            <td><?php echo $row['apellidos']; ?></td>
+            <td><?php echo $row['username']; ?></td>
+            <td><?php echo $row['password']; ?></td>
+            <td><?php echo $row['rol']; ?></td>
+            <td><?php echo $row['email']; ?></td>
+            <td><a href="borrar.php?id=<?php echo $row['id']?>"><i class="fa-solid fa-delete-left"></i></a>
+                <a href="editar.php?id=<?php echo $row['id']?>"><i class="fa-solid fa-pen"></i></a>
+          </td>
+          </tr>
+          <?php } ?>
+
+  </tbody>
+</table>
   </div>
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

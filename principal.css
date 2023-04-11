@@ -7,6 +7,8 @@
 body {
   background-color: white;
   margin: 0;
+  
+
 }
 
 header {
@@ -118,7 +120,7 @@ header h3:hover {
   top: 100px;
   margin-left: 200px;
   margin-right: 200px;
-
+  font-weight: 800;
 }
 
 /* Estilos para la tabla */

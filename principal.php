@@ -17,12 +17,12 @@
 
   <div class="menu">
       <div class="usuarios">
-        <img src="https://luciamonterorodriguez.com/wp-content/uploads/2021/03/computer-1331579_640.png" alt="usuarios">
+        <img src="https://luciamonterorodriguez.com/wp-content/uploads/2021/03/computer-1331579_640.png" alt="usuarios" id="usuarios">
         USUARIOS
       </div>
 
       <div class="docentes">
-        <img src="https://cdn-icons-png.flaticon.com/512/2643/2643395.png" alt="docentes">
+        <img src="https://cdn-icons-png.flaticon.com/512/2643/2643395.png" alt="docentes" id="docentes">
         DOCENTES
       </div>
   </div>
@@ -92,4 +92,5 @@
     });
   </script>
 </body>
+<script src="Js/principal.js"></script>
 </html>

@@ -25,9 +25,9 @@ session_start();
 <header>
   <h1 class="logo">EDUPLUS</h1>
   <div class="submenu">
-  <button class="clases">CLASES</button>
-  <button class="estudiantes">ESTUDIANTES</button>
-  <button class="recursos">RECURSOS</button>
+  <div class="clases" id="clases">Clases</div>
+  <div class="estudiantes" id="estudiantes">Estudiantes</div>
+  <div class="recursos" id="recursos">Recursos</div>
   </div>
 </header>
 

@@ -30,7 +30,11 @@ session_start();
   <button class="recursos">RECURSOS</button>
   </div>
 </header>
-  <div class="contenido"></div>
+
+  <div class="contenido" id="contClases"></div>
+  <div class="contenido" id="contEstudiantes"></div>
+  <div class="contenido" id="contRecursos"></div>
+  
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"
   integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>

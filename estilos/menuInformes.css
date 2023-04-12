@@ -63,6 +63,18 @@ header:before {
 .contenido{
   width: 100vw;
   height: 100vh;
-  background-color: aqua;
-  display: none;
+  position: absolute;
+}
+
+
+#contClases{
+  background-color: #2715DB;
+}
+
+#contEstudiantes{
+  background-color: yellow;
+}
+
+#contRecursos{
+  background-color: violet;
 }

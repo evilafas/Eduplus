@@ -20,22 +20,30 @@ header {
   
 }
 
+header a{
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  position: absolute;
+  left: 80vw;
+}
+
+header a:hover{
+  font-weight: 500;
+  text-decoration: wavy;
+  transition: 1ms;
+}
+
 .submenu{
   display: flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
+  gap: 20px;
   width: 500px;
   height: 40px;
 }
 
-.submenu button{
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
-}
+
 
 .logo{
   position: absolute;
@@ -64,6 +72,39 @@ header:before {
   width: 100vw;
   height: 100vh;
   position: absolute;
+}
+
+  .clases{
+    height: 100%;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+  .estudiantes{
+    height: 100%;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+  .recursos{
+    height: 100%;
+    margin-top: 10px;
+    padding-top: 5px;
+    
+  }
+
+.clases:hover{
+  color: #11ACCD;
+  box-shadow: #0A2A66 0px 5px;
+  cursor: pointer;
+}
+.estudiantes:hover{
+    color: #11ACCD;
+     box-shadow: #0A2A66 0px 5px;
+     cursor: pointer;
+ }
+ .recursos:hover{
+  color: #11ACCD;
+  box-shadow: #0A2A66 0px 5px;
+  cursor: pointer;
 }
 
 

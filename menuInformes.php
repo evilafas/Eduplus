@@ -25,10 +25,11 @@ session_start();
 <header>
   <h1 class="logo">EDUPLUS</h1>
   <div class="submenu">
-  <div class="clases" id="clases">Clases</div>
-  <div class="estudiantes" id="estudiantes">Estudiantes</div>
-  <div class="recursos" id="recursos">Recursos</div>
+  <div class="clases" id="clases"><h5>CLASES</h5></div>
+  <div class="estudiantes" id="estudiantes"><h5>ESTUDIANTES</h5></div>
+  <div class="recursos" id="recursos"><h5>RECURSOS</h5></div>
   </div>
+<a href="index.php">Cerrar Sesión</a>
 </header>
 
   <div class="contenido" id="contClases"></div>

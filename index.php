@@ -11,6 +11,17 @@
   <title>LOGIN</title>
   <link rel="shortcut icon" href="icon.png">
 </head>
+<style>
+  #login{
+    background: #1784E1;
+    border: none;
+    border-radius: 20px;
+  }
+
+  #login:hover{
+    background:#1979c6;
+  }
+</style>
 <body>
 <section class="vh-100" style="background-color: #2596be;">
   <div class="container py-5 h-100" style="background-color: #f7f7f7;">
@@ -28,7 +39,7 @@
 
                   <div class="d-flex align-items-center mb-3 pb-1">
                     
-                    <span class="h1 fw-bold mb-0">PORTAL INICIO DE SESION</span>
+                    <span class="h1 fw-bold mb-0">INICIO DE SESION</span>
                   </div>
                   <div class="form-outline mb-4">
                     <input type="text" name="username" class="form-control form-control-lg"  placeholder="Username"/>
@@ -41,7 +52,7 @@
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-dark btn-lg btn-block" type="submit" values="Iniciar Sesion">Iniciar Sesion</button>
+                    <button class="btn btn-dark btn-lg btn-block" type="submit" values="Iniciar Sesion" id="login">Iniciar Sesion</button>
                   </div>
             
                 

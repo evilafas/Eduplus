@@ -19,11 +19,15 @@ session_start();
     integrity="sha512-LXdgBOZ1Q5CgGjgzE8x9M0I+9DOtJlQ5/5LTMZ1QaUDrIWsdoPjKdJ8tbXyFxxXzBOoLjEhzqfJNQOByFxFbLA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="icon.png">
-  <link rel="stylesheet" href="estilos\menuinformes.css">
+  <link rel="stylesheet" href="estilos\menuInformes.css">
 </head>
 <body>
 <header>
   <h1 class="logo">EDUPLUS</h1>
+  <?php
+      $username = $_SESSION['username'];
+      echo '<p class="user"><i class="fa-solid fa-user"></i> ' . $username . '</p>';
+      ?>
   <div class="submenu">
   <div class="clases" id="clases"><h5>CLASES</h5></div>
   <div class="estudiantes" id="estudiantes"><h5>ESTUDIANTES</h5></div>

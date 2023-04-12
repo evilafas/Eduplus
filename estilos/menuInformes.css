@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  height: 50px;
+  height: 70px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
   border-radius: 5px;
   position: relative;
@@ -89,6 +89,12 @@ header:before {
     margin-top: 10px;
     padding-top: 5px;
     
+  }
+
+  .user{
+    position: absolute;
+    left: 0;
+    top: 45px;
   }
 
 .clases:hover{

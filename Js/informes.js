@@ -6,12 +6,6 @@ var divEstudiantes = document.getElementById("divEstudiantes");
 var recursos = document.getElementById("recursos");
 var divRecursos = document.getElementById("divRecursos");
 
-window.onload = function(){
-    divEstudiantes.style.display = "none";
-    divRecursos.style.display = "none";
-    divClases.style.display = "none";
-}
-
 // Agregar un evento de clic a cada elemento del menú
 clases.addEventListener("click", function() {
     divEstudiantes.style.display = "none";

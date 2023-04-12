@@ -5,7 +5,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,75 +19,18 @@ session_start();
     integrity="sha512-LXdgBOZ1Q5CgGjgzE8x9M0I+9DOtJlQ5/5LTMZ1QaUDrIWsdoPjKdJ8tbXyFxxXzBOoLjEhzqfJNQOByFxFbLA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="icon.png">
-  <link rel="stylesheet" href="estilos/menuInformes.css">
+  <link rel="stylesheet" href="estilos\menuinformes.css">
 </head>
-
 <body>
-  <div class="contenedor">
-    <div class="barrasup">
-      <?php
-      // Recuperar el valor de la variable de sesión 'username'
-      $username = $_SESSION['username'];
-
-      // Mostrar el nombre de usuario en la página
-      echo '<h2 class="text">Bienvenido, ' . $username . '!</h2>';
-      ?>
-      <div class="clases" id="clases">Clases</div>
-      <div class="estudiantes" id="estudiantes">Estudiantes</div>
-      <div class="recursos" id="recursos">Recursos</div>
-      <a href="indexlg.php" class="logout"><i class="fa-solid fa-right-from-bracket"></i>Cerrar Sesion</a>
-
-    </div>
-
-    <!-- Div Clases -->
-    <div class="divClases" id="divClases">
-
-<div id="modal" class="modal">
-    <div class="modal-contenido">
-      <span class="cerrar">&times;</span>
-      <form>
-        <label for="titulo">Título de la Clase:</label><br>
-        <input type="text" id="titulo" name="titulo"><br>
-
-        <label for="descripcion">Descripción:</label><br>
-        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br>
-
-        <label for="actividades">Actividades de Aprendizaje:</label><br>
-        <textarea id="actividades" name="actividades" rows="4" cols="50"></textarea><br>
-
-        <label for="evaluacion">Evaluación:</label><br>
-        <textarea id="evaluacion" name="evaluacion" rows="4" cols="50"></textarea><br>
-
-        <label for="cierre">Cierre:</label><br>
-        <textarea id="cierre" name="cierre" rows="4" cols="50"></textarea><br><br>
-
-        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar">
-      </form>
-    </div>
+<header>
+  <h1 class="logo">EDUPLUS</h1>
+  <div class="submenu">
+  <button class="clases">CLASES</button>
+  <button class="estudiantes">ESTUDIANTES</button>
+  <button class="recursos">RECURSOS</button>
   </div>
-  <div id="contenedor-tarjetas"></div>
-
-      <button id="btnClases">+</button>
-    </div>
-
-    <!-- Div Recursos -->
-
-    <div class="divRecursos" id="divRecursos">
-
-
-
-      <button id="btnRecursos">AGREGAR</button>
-    </div>
-
-    <!-- Div Estudiante -->
-
-    <div class="divEstudiantes" id="divEstudiantes">
-
-
-
-      <button id="divEstudiantes">AGREGAR</button>
-    </div>
-  </div>
+</header>
+  <div class="contenido"></div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"
   integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>

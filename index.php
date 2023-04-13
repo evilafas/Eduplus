@@ -39,7 +39,7 @@
 
                   <div class="d-flex align-items-center mb-3 pb-1">
                     
-                    <span class="h1 fw-bold mb-0">INICIO DE SESION</span>
+                    <span class="h1 fw-bold mb-0">LOGIN</span>
                   </div>
                   <div class="form-outline mb-4">
                     <input type="text" name="username" class="form-control form-control-lg"  placeholder="Username"/>

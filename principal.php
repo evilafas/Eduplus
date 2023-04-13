@@ -8,6 +8,7 @@
   <title>EDUPLUS</title>
   <link rel="stylesheet" href="principal.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <header>
@@ -55,8 +56,8 @@
             <td><?php echo $row['password']; ?></td>
             <td><?php echo $row['rol']; ?></td>
             <td><?php echo $row['email']; ?></td>
-            <td><a href="borrar.php?id=<?php echo $row['id']?>"><i class="fa-solid fa-delete-left"></i></a>
-                <a href="editar.php?id=<?php echo $row['id']?>"><i class="fa-solid fa-pen"></i></a>
+            <td><a href="borrar.php?id=<?php echo $row['id']?>">Eliminar</a>
+                <a href="editar.php?id=<?php echo $row['id']?>">Editar</a>
           </td>
           </tr>
           <?php } ?>
@@ -64,7 +65,35 @@
   </tbody>
 </table>
   </div>
+
+  <img src="https://cdn1.iconfinder.com/data/icons/instagram-ui-glyph/48/Sed-16-512.png" alt="agregar" class="agregar">
   
+  <div class="modal">
+    <h1 class="cerrarModal">X</h1>
+    <h3>AGREGAR USUARIO</h3>
+    <form action="guardar.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombres" id="nombre">
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellidos" id="apellido">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+    <label for="rol">Rol:</label>
+    <select name="rol" id="rol">
+      <option value=""></option>
+      <option value="Admin">Admin</option>
+      <option value="Docente">Docente</option>
+    </select>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <input type="submit" value="Enviar" name="guardar">
+    </form>
+  </div>
+
+
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
   <script type="text/javascript">

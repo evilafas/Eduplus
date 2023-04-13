@@ -11,6 +11,19 @@ body {
 
 }
 
+.agregar{
+  height: 100px;
+  position:fixed;
+  left: 80vw;
+  top: 70vh;
+}
+
+.agregar:hover{
+  height: 110px;
+  cursor: pointer;
+}
+
+
 header {
   display: flex;
   height: 70px;
@@ -156,4 +169,63 @@ header h3:hover {
 .dataTables_paginate .paginate_button.disabled {
   color: #aaa;
   cursor: not-allowed;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  background-color: whitesmoke;
+  height: 500px;
+  width: 600px;
+  top: 10vh;
+  left: 30vw;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+
+
+.modal form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.modal form input{
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  font-weight: 700;
+}
+.modal form select{
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+input[type="submit"] {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  height: 30px;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #aaa;
+  opacity: 0.5;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.cerrarModal{
+  position: absolute;
+  left: 90%;
+  top: 0;
+}
+
+.cerrarModal:hover{
+  cursor: pointer;
 }
